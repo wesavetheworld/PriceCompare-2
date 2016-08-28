@@ -46,7 +46,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary\MySuperMarket.ClassLibrary.csproj">
+    <ProjectReference Include="..\MySuperMarket.ClassLibrary\MySuperMarket.ClassLibrary.csproj">
       <Project>{dd486473-8659-4f99-b905-24688780f805}</Project>
       <Name>MySuperMarket.ClassLibrary</Name>
     </ProjectReference>

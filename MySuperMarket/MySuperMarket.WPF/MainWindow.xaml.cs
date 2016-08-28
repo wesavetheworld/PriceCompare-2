@@ -17,7 +17,7 @@ namespace MySuperMarket.WPF
     {
         //string _url1 = "http://pricesprodpublic.blob.core.windows.net/price/Price7290027600007-005-201607262230.gz?sv=2014-02-14&sr=b&sig=jtl9iT0UKc0fO1xqDK2bsAkorLUrpr4YFTGrPnfBqdo%3D&se=2016-08-15T07%3A21%3A13Z&sp=r";
         //string _file1 = "test.gz";
-        string _filePath1 = @"C:\Users\Code Value User\Source\Repos\PriceCompare\MySuperMarket\ClassLibrary\bin\Debug\resources1";
+        string _filePath1 = @"C:\Users\Code Value User\Source\Repos\PriceCompare\MySuperMarket\MySuperMarket.ClassLibrary\bin\Debug\resources1";
 
         //string _url2 = "http://www.ybitan.co.il/upload/PriceFull7290725900003_093_201608150628.zip";
         //string _file2 = "test.gz";
