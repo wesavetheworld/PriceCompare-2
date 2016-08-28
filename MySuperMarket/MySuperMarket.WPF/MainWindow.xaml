@@ -1,0 +1,33 @@
+﻿<Window x:Class="MySuperMarket.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MySuperMarket.WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="692" Width="1144">
+    <Grid Margin="0,0,2,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="inputTextBox" HorizontalAlignment="Left" Height="23" Margin="985,96,0,0" TextWrapping="Wrap" Text="שם מוצר" VerticalAlignment="Top" Width="85" FlowDirection="RightToLeft" TextChanged="inputTextBox_TextChanged"/>
+
+        <ListBox x:Name="searchListBox" HorizontalAlignment="Left" Height="180" Margin="555,45,0,0" VerticalAlignment="Top" Width="360" FlowDirection="RightToLeft" MouseDoubleClick="searchListBox_MouseDoubleClick"/>
+        <ListBox x:Name="chosenItemsListBox" HorizontalAlignment="Left" Height="180" Margin="80,45,0,0" VerticalAlignment="Top" Width="360" FlowDirection="RightToLeft"/>
+        <ListBox x:Name="resultListBox" HorizontalAlignment="Left" Height="290" Margin="555,285,0,0" VerticalAlignment="Top" Width="360" FlowDirection="RightToLeft" SelectionChanged="resultListBox_SelectionChanged"/>
+        <ListBox x:Name="expendedCartListBox" HorizontalAlignment="Left" Height="290" Margin="80,285,0,0" VerticalAlignment="Top" Width="360" FlowDirection="RightToLeft"/>
+
+        <Button x:Name="getDataButton" Content="טען מידע" HorizontalAlignment="Left" Margin="985,45,0,0" VerticalAlignment="Top" Width="85" Click="getDataButton_Click" Height="20"/>
+        <Button x:Name="compareButton" Content="השווה מחירים" HorizontalAlignment="Left" Margin="985,285,0,0" VerticalAlignment="Top" Width="85" Click="compareButton_Click"/>
+        <Button x:Name="loadButton" Content="הצג" HorizontalAlignment="Left" Margin="985,335,0,0" VerticalAlignment="Top" Width="85" Click="loadButton_Click"/>
+        <Button x:Name="clearSelectionButton" Content="נקה חיפוש" HorizontalAlignment="Left" Margin="460,45,0,0" VerticalAlignment="Top" Width="85" Click="clearSelectionButton_Click"/>
+        <Button x:Name="searchButton" Content="חיפוש" HorizontalAlignment="Left" Margin="985,150,0,0" VerticalAlignment="Top" Width="85" Click="searchButton_Click"/>
+        <!--<DataGrid x:Name="dataGrid" DataContext="{Binding Source = cartPricesDic}" HorizontalAlignment="Left" Margin="160,330,0,0" VerticalAlignment="Top" Height="240" Width="670">
+            <DataGrid.Columns>
+                <DataGridTextColumn  Header="Chain Name" Width="*" Binding="{Binding Path=ChainName}" ></DataGridTextColumn>
+                <DataGridTextColumn Header="Item" Width="*" Binding="{Binding Path=Name}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Price NIS" Width="*" Binding="{Binding Path=PricePerUOM}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>-->
+    </Grid>
+</Window>
